@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="container">
       <h1 class="header-title">
         <span class="title-color"
           >Когнитивные<br />
@@ -16,14 +16,9 @@
         /></span>
         в программировании
       </h1>
-      <p class="header-image">
-        <img
-          src="src/img/main.png"
-          height="444"
-          width="952"
-          alt="Картинка с вопросом"
-        />
-      </p>
+      <div class="header-image">
+        <img src="src/img/main.png" height="525px" alt="Картинка с вопросом" />
+      </div>
       <ul class="header-description">
         <li>
           <p>
@@ -38,16 +33,18 @@
           <p>
             Вместе они формируют что-то вроде замкнутого цикла, и это может
             привести к длительной потере продуктивности, багам и бесконечному
-            разочарованию.<br />
+            разочарованию.
+          </p>
+          <p>
             Если мы сможем минимизировать воздействие одного или нескольких из
             этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.
           </p>
         </li>
       </ul>
-      <p><a href="#navigation-body" class="button">Подробнее</a></p>
+      <a href="#navigation-body" class="button button-header">Подробнее</a>
     </header>
     <main class="body">
-      <section class="body-video-description">
+      <section class="body-video-description container">
         <h2 class="video-description-title">
           Что же это такое,<br />
           <span class="title-color">когнитивные искажения?</span>
@@ -55,79 +52,77 @@
         <p class="video-description-video">
           Что такое когнитивные искажения. Petrovna Channel
         </p>
-        <iframe
-          class="video"
-          width="919"
-          height="569"
-          src="https://www.youtube.com/embed/jie9AizBqss"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+        <div class="video-description">
+          <iframe
+            class="video"
+            width="919"
+            height="569"
+            src="https://www.youtube.com/embed/jie9AizBqss"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
-      <section id="navigation-body" class="body-navigation">
+      <section id="navigation-body" class="body-navigation container">
         <nav class="navigation">
-          <h2 class="visually-hidden">Навигация</h2>
-          <h3 class="navigation-title">
-            <span class="title-color"> 5 когнитивных искажений </span>
-            о существовании которых стоит помнить
-          </h3>
           <ul class="navigation-list">
-            <li class="navigation-item">
-              <a href="#ikea-effect">
-                <p class="number-item">1</p>
-                <h3 class="title-color">Эффект ИКЕА</h3>
-                <p>
-                  Вы переоцениваете собственные решения, и, как следствие,
-                  недооцениваете решения других.
-                </p>
-              </a>
+            <li class="list-item">
+              <h3 class="navigation-title">
+                <span class="title-color"> 5 когнитивных искажений </span>
+                <br />о существовании которых стоит помнить
+              </h3>
             </li>
-            <li class="navigation-item">
-              <a href="#premature-optimization">
-                <p class="number-item">2</p>
-                <h3 class="title-color">Преждевременная оптимизация</h3>
-                <p>
-                  Вы оптимизируете что-то задолго до того, как в этом появляется
-                  необходимость.
-                </p>
-              </a>
+            <li class="navigation-item list-item">
+              <a href="#ikea-effect" class="link-item"></a>
+              <p class="number-item">1</p>
+              <h3 class="title-color">Эффект ИКЕА</h3>
+              <p class="description-item">
+                Вы переоцениваете собственные решения, и, как следствие,
+                недооцениваете решения других.
+              </p>
             </li>
-            <li class="navigation-item">
-              <a href="#distortion-of-novelty">
-                <p class="number-item">3</p>
-                <h3 class="title-color">Искажение новизны</h3>
-                <p>
-                  Вы даёте более высокую оценку тем событиям, которые произошли
-                  недавно, и недооцениваете более старые.
-                </p>
-              </a>
+            <li class="navigation-item list-item">
+              <a href="#premature-optimization" class="link-item"></a>
+              <p class="number-item">2</p>
+              <h3 class="title-color">Преждевременная оптимизация</h3>
+              <p class="description-item">
+                Вы оптимизируете что-то задолго до того, как в этом появляется
+                необходимость.
+              </p>
             </li>
-            <li class="navigation-item">
-              <a href="hyperbolic-depreciation">
-                <p class="number-item">4</p>
-                <h3 class="title-color">Гиперболическое обесценивание</h3>
-                <p>
-                  Вы гонитесь за немедленной маленькой выгодой и игнорируете
-                  более крупную, недоступную сейчас, но доступную в будущем.
-                </p>
-              </a>
+            <li class="navigation-item list-item">
+              <a href="#distortion-of-novelty" class="link-item"></a>
+              <p class="number-item">3</p>
+              <h3 class="title-color">Искажение новизны</h3>
+              <p class="description-item">
+                Вы даёте более высокую оценку тем событиям, которые произошли
+                недавно, и недооцениваете более старые.
+              </p>
             </li>
-            <li class="navigation-item">
-              <a href="#errors-in-planning">
-                <p class="number-item">5</p>
-                <h3 class="title-color">Ошибка планирования</h3>
-                <p>
-                  Неправильно рассчитывать время необходимое для завершения
-                  задачи.
-                </p>
-              </a>
+            <li class="navigation-item list-item">
+              <a href="#hyperbolic-depreciation" class="link-item"></a>
+              <p class="number-item">4</p>
+              <h3 class="title-color">Гиперболическое обесценивание</h3>
+              <p class="description-item">
+                Вы гонитесь за немедленной маленькой выгодой и игнорируете более
+                крупную, недоступную сейчас, но доступную в будущем.
+              </p>
+            </li>
+            <li class="navigation-item list-item">
+              <a href="#errors-in-planning" class="link-item"></a>
+              <p class="number-item">5</p>
+              <h3 class="title-color">Ошибка планирования</h3>
+              <p class="description-item">
+                Неправильно рассчитывать время необходимое для завершения
+                задачи.
+              </p>
             </li>
           </ul>
         </nav>
       </section>
       <section class="body-content">
         <ul class="content-list">
-          <li class="content-item" id="ikea-effect">
+          <li class="content-item container" id="ikea-effect">
             <div class="image-section">
               <div class="description-section-content">
                 <p class="item-post">Когнитивные искажения</p>
@@ -167,7 +162,7 @@
               </li>
             </ul>
           </li>
-          <li class="content-item" id="premature-optimization">
+          <li class="content-item container" id="premature-optimization">
             <div class="image-section">
               <div class="description-section-content">
                 <p class="item-post-light">Когнитивные искажения</p>
@@ -205,7 +200,7 @@
               </li>
             </ul>
           </li>
-          <li class="content-item" id="distortion-of-novelty">
+          <li class="content-item container" id="distortion-of-novelty">
             <div class="image-section">
               <div class="description-section-content">
                 <p class="item-post">Когнитивные искажения</p>
@@ -244,7 +239,7 @@
               </li>
             </ul>
           </li>
-          <li class="content-item" id="hyperbolic-depreciation">
+          <li class="content-item container" id="hyperbolic-depreciation">
             <div class="image-section">
               <div class="description-section-content">
                 <p class="item-post-light">Когнитивные искажения</p>
@@ -285,7 +280,7 @@
               </li>
             </ul>
           </li>
-          <li class="content-item" id="errors-in-planning">
+          <li class="content-item container" id="errors-in-planning">
             <div class="image-section">
               <div class="description-section-content">
                 <p class="item-post">Когнитивные искажения</p>
@@ -328,20 +323,20 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <section class="subscription-form">
-        <div class="subscribe-field">
-          <div class="subscribe-field-description">
-            <h3>
-              Хотите узнать больше?<br />
-              Подпишитесь на обновления
-            </h3>
-          </div>
-          <div class="subscribe-field-form">
-            <form action="#" method="post">
-              <label class="subscribe-label" for="subscribe"
-                >Электронная почта</label
-              >
+    <footer class="container">
+      <section class="subscribe-field">
+        <div class="subscribe-field-description">
+          <h3>
+            Хотите узнать больше?<br />
+            Подпишитесь на обновления
+          </h3>
+        </div>
+        <div class="subscribe-field-form">
+          <form action="#" method="post">
+            <label class="subscribe-label" for="subscribe"
+              >Электронная почта</label
+            >
+            <div class="subscribe-container">
               <input
                 class="subscribe-input"
                 type="text"
@@ -351,14 +346,14 @@
                 placeholder="Ваша электронная почта"
               />
               <button type="submit" class="button subscribe-send-button">
-                Подписаться
+                <span class="visually-hidden">Подписаться</span>
               </button>
-            </form>
-            <p class="subscribe-attention">
-              Подписываясь, вы принимаете
-              <a href="#">правила сервиса</a>
-            </p>
-          </div>
+            </div>
+          </form>
+          <p class="subscribe-attention">
+            Подписываясь, вы принимаете
+            <a href="#">правила сервиса</a>
+          </p>
         </div>
       </section>
       <section class="contact-information">
