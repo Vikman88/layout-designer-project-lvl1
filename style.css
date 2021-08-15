@@ -55,7 +55,7 @@ header {
 }
 
 header::before {
-  background-image: url(../src/img/background.png);
+  background-image: url(../src/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   content: '';
@@ -189,7 +189,7 @@ header::before {
 }
 
 .content-item::before {
-  background-image: url(../src/img/background.png);
+  background-image: url(../src/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   content: '';
@@ -426,7 +426,7 @@ header::before {
 }
 
 .subscribe-send-button::before {
-  background-image: url(../src/img/send.svg);
+  background-image: url(../src/send.svg);
   width: 22px;
   height: 22px;
   background-size: cover;
