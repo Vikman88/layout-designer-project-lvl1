@@ -401,10 +401,10 @@ header::before {
 }
 
 .contact-information {
+  margin-top: 60px;
+
   font-size: 14px;
   text-align: center;
-
-  margin-top: 60px;
 }
 
 .subscribe-container {
@@ -414,24 +414,26 @@ header::before {
 }
 
 .subscribe-input {
-  height: 50px;
-  width: 100%;
-
   box-sizing: border-box;
 
-  background: #ffffff;
+  width: 100%;
+  height: 50px;
 
   padding: 15px;
+
+  background: #fff;
+
   border: 1px solid #e3e3e3;
 }
 
 .subscribe-send-button {
   position: relative;
 
-  height: 50px;
   width: 70px;
+  height: 50px;
 
   padding: 0;
+
   border: 0;
 }
 
@@ -441,9 +443,11 @@ header::before {
   height: 22px;
 
   background-image: url(../send.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+
   margin: auto;
+
+  background-repeat: no-repeat;
+  background-size: cover;
 
   content: '';
 }
@@ -456,11 +460,14 @@ header::before {
   margin: -1px;
 
   padding: 0;
+
   border: 0;
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
   overflow: hidden;
+
+  clip-path: inset(100%);
+
   clip: rect(0 0 0 0);
 }
