@@ -124,7 +124,7 @@ header::before {
 
 .body-video-description {
   position: relative;
-  padding-bottom: 16px;
+  padding-bottom: 476px;
 }
 
 .video-description-title {
@@ -142,13 +142,16 @@ header::before {
 .video-description {
   display: flex;
   justify-content: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -459px;
 }
 
 .video {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.body-video-description::after {
+/* .body-video-description::after {
   content: '';
 
   display: block;
@@ -161,7 +164,7 @@ header::before {
   left: 0;
   bottom: 0;
   z-index: -1;
-}
+} */
 
 .link-item {
   display: block;
@@ -210,6 +213,7 @@ header::before {
 
 .body-navigation {
   background-color: #42413c;
+  padding-top: 200px;
 }
 
 .navigation-list {
