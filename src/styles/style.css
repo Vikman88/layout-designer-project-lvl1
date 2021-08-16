@@ -401,42 +401,48 @@ header::before {
 }
 
 .contact-information {
-  margin-top: 60px;
   font-size: 14px;
   text-align: center;
+
+  margin-top: 60px;
 }
 
 .subscribe-container {
   display: flex;
+
   margin-top: 10px;
 }
 
 .subscribe-input {
   height: 50px;
   width: 100%;
-  padding: 15px;
-  background: #ffffff;
-  border: 1px solid #e3e3e3;
+
   box-sizing: border-box;
+
+  background: #ffffff;
+
+  padding: 15px;
+  border: 1px solid #e3e3e3;
 }
 
 .subscribe-send-button {
   position: relative;
 
-  padding: 0;
-  border: 0;
   height: 50px;
   width: 70px;
+
+  padding: 0;
+  border: 0;
 }
 
 .subscribe-send-button::before {
-  background-image: url(../send.svg);
+  display: block;
   width: 22px;
   height: 22px;
+
+  background-image: url(../send.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* position: absolute; */
-  display: block;
   margin: auto;
 
   content: '';
@@ -448,12 +454,13 @@ header::before {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
+
   padding: 0;
+  border: 0;
 
   white-space: nowrap;
 
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  clip: rect(0 0 0 0);
 }
