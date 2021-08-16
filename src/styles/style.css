@@ -76,7 +76,7 @@ header::before {
 .header-image {
   position: absolute;
   top: 55px;
-  right: -270px;
+  right: -105px;
   z-index: -1;
 }
 
